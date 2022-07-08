@@ -1,11 +1,15 @@
-const Scores= (props) =>{
-  return(
-    <>
-    {props.scores.map(score=>
-    <p> {props.score.date}</p>,
-    <p>{props.score.score}</p>
+
+const Score = ({scores}) => {
+return (  
+  <>
+  <div>
+    {scores.map(score =>
+    <p>Score:{score.score}</p>
+
       )}
-    </>
-  )
-  }
-  export default Scores
+  </div>
+  </>
+);
+}
+
+export default Score;
